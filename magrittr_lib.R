@@ -1,3 +1,7 @@
+# magrittr package introduces the chaining/piping workflow
+# https://github.com/tidyverse/magrittr
+# https://magrittr.tidyverse.org/
+#
 # install.packages("magrittr")
 
 library(magrittr)

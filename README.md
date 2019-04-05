@@ -1,6 +1,6 @@
 # R-tute
 
-Learning R
+Assorted R Learning
 
 ### Resources
 

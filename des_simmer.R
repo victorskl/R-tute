@@ -8,6 +8,10 @@
 # Event       : any change in the state of the system. e.g. entity is created, entity competes with another entity, entity leaves the system.
 #
 # https://r-simmer.org/
+# simmer is a process-oriented and trajectory-based Discrete-Event Simulation (DES) package for R
+# As a noteworthy characteristic, simmer exploits the concept of trajectory: a common path in the 
+# simulation model for entities of the same type.
+# 
 # https://r-simmer.org/extensions/plot/
 
 #install.packages("simmer", dependencies = T)
@@ -45,8 +49,8 @@ patient <- trajectory("patients' path") %>%
 env %>%
   
   # model current status as 2 nurses, 3 doctors, 2 admin staffs
-  add_resource("nurse", 2) %>% # parameter tuning, increase from 2 to 3
-  add_resource("doctor", 3) %>% # parameter tuning, increase from 3 to 4
+  add_resource("nurse", 3) %>% # parameter tuning, increase from 2 to 3
+  add_resource("doctor", 4) %>% # parameter tuning, increase from 3 to 4
   add_resource("admin", 2) %>%
   
   # add generator for rate of arrival for patient
@@ -59,6 +63,6 @@ env %>% run(until=540) # run simulation for 9 hours or 540 minutes, working hour
 
 # plot simulation results
 plot(env, what = "resources", metric = "usage", c("nurse", "doctor", "admin"), items = c("server", "queue"))
-#plot(env, what = "arrivals", metric = "waiting_time")
+plot(env, what = "arrivals", metric = "waiting_time")
 
 
