@@ -1,8 +1,10 @@
 # My first program in R Programming
 myString <- "Hello, World!"
-print (myString)
+print(myString)
 
+# Terminal:
 # Rscript hello.R
 #
-# R
-# > source('hello.R')
+# R Console:
+# > source("hello.R")
+# > print(myString)

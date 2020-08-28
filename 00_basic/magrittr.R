@@ -1,4 +1,4 @@
-# magrittr package introduces the chaining/piping workflow
+# magrittr package introduces the chaining/piping workflow (aka function chaining)
 # https://github.com/tidyverse/magrittr
 # https://magrittr.tidyverse.org/
 #

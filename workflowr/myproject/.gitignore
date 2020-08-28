@@ -1,0 +1,15 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.Rapp.history
+.DS_Store
+analysis/figure
+analysis/*png
+analysis/*html
+analysis/*_cache
+analysis/site_libs
+
+# Uncomment this if GitHub Page publishing or deploy to httpd server. 
+# Understand that self-contain JS purpose. But why not CDN?
+docs/site_libs

@@ -6,3 +6,8 @@
 setwd("/tmp")
 getwd()
 ls()
+
+# R Console:
+# > setwd("~/Projects/github/R-tute")
+# > getwd()
+# > ls()

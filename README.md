@@ -2,19 +2,31 @@
 
 Assorted R Learning
 
-Install R either through [package distribution](https://cran.ms.unimelb.edu.au) or Homebrew (latter is recommended).
+Install R either through [package distribution](https://cran.ms.unimelb.edu.au) or Homebrew:
 
 ```
 brew info r
 brew install r
+```
+
+Check version:
+
+```
 which R
 which Rscript
 R --version
 ```
 
-Install **RStudio** either through [rstudio.com](https://www.rstudio.com) or UniMelb Jamf Self Service software catalog (latter is recommended).
+R Console:
 
-### Resources
+```
+$ R
+>
+> q()
+```
 
-Efficient R programming
-https://csgillespie.github.io/efficientR/
+Install [**RStudio**](https://www.rstudio.com)
+
+## Related
+
+- https://github.com/victorskl/docker-nodejs-r
