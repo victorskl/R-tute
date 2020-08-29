@@ -1,0 +1,3 @@
+# ignore rmarkdown::render() output files
+*.html
+*.pdf
