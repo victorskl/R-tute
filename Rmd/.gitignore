@@ -1,3 +1,9 @@
 # ignore rmarkdown::render() output files
 *.html
 *.pdf
+
+src/*.html
+src/*.pdf
+
+# build directory
+output/
