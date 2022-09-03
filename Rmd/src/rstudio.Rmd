@@ -1,5 +1,5 @@
 ---
-title: "RStudio > File > New Rmd"
+title: "RStudio > File > New File > R Markdown"
 output: html_document
 ---
 
