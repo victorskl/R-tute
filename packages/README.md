@@ -47,6 +47,15 @@ R
 [1] 68
 ```
 
+You can also install the package locally as follows:
+
+```
+R
+> library(devtools)
+> devtools::install(".")
+```
+
+
 #### man doc
 
 ```
