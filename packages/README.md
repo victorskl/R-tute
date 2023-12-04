@@ -2,6 +2,10 @@
 
 Packaging functions implemented in R as software library
 
+* https://github.com/r-lib/devtools
+* https://github.com/r-lib/pak
+* https://github.com/r-lib/remotes
+
 ### RStudio
 ```
 File > New Project > New Directory > R Package > ...
@@ -10,14 +14,14 @@ Type: Package
 Package Name: rpkgboiler
 ```
 
-### devtools
+### toolchain
 
 - https://ourcodingclub.github.io/tutorials/writing-r-package/
 - https://r-pkgs.org/
 
 ```
 R
-> install.packages("devtools")
+> install.packages("devtools", "remotes", "pak")
 > install.packages("roxygen2")
 > q()
 ```
@@ -55,6 +59,11 @@ R
 > devtools::install(".")
 ```
 
+```
+R
+> library(pak)
+> pak::local_install(".")
+```
 
 #### man doc
 
@@ -87,6 +96,12 @@ R
 R
 > library(remotes)
 > remotes::install_github("victorskl/R-tute/packages/TempConverter")
+```
+
+```
+R
+> library(pak)
+> pak::pkg_install("victorskl/R-tute/packages/TempConverter")
 ```
 
 #### Building a source package
